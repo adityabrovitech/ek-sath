@@ -72,20 +72,15 @@ export const CarterSection = () => {
         nearly 10000+ kgs of illegal construction debris and marine waste have
         been cleared from the beach and the surrounding mangroves.
       </p>
-      <h3 className="activity-subHeading">Five core members</h3>
+      <h3 className="activity-subHeading my-[10px]">Five core members</h3>
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-        }}
+        className="grid grid-cols-2 sm:grid-cols-3 gap-4"
       >
         {userList?.map((user, index) => (
           <UserDetail userImg={user?.img} title={user?.name} />
         ))}
       </div>
-      <p className="activity-description">
+      <p className="activity-description mt-[40px]">
         Through beach clean-ups, the Marine waste collected is segregated into
         different categories and the plastic which cannot be recycled is sent to
         a cement factory as Refuse Derived Fuel (RDF). Religious idols found on

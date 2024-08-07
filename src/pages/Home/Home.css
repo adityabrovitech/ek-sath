@@ -13,7 +13,7 @@
   border-width: 0 0 10px 0;
 }
 
-.menu-item.selected {
+.selected {
   border: 10px solid #3c3c3b;
   border-width: 0 0 10px 0;
 }

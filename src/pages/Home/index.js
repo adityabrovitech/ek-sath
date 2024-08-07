@@ -1,7 +1,4 @@
 import React, { useState } from "react"
-import Logo from "../../assets/images/Logo.png"
-import { Container } from "../../components/Container"
-
 import Goals from "./Component/Goals/Goals"
 import ActivityComponent from "../../components/ActivityComponent"
 import { ActivitySection } from "./Component/ActivitySection/ActivitySection"
@@ -17,6 +14,7 @@ import OurPartner from "./Component/OurPartners/Index"
 import Donate from "./Component/Donate"
 import BannerSection from "./Component/BannerSection"
 import BannerImage from "../../assets/images/BannerImage.png"
+import Navbar from "./Navbar"
 const Home = () => {
   const MenuItems = ["Home", "Projects", "Team", "Partners"]
   const swachActivity = {
@@ -39,90 +37,48 @@ const Home = () => {
   const [selectedItem, setSelectedItem] = useState(0)
   const handleClick = (index) => {
     setSelectedItem(index)
-    navigateToModule({name:MenuItems[index]?.toLowerCase()})
+    navigateToModule({ name: MenuItems[index]?.toLowerCase() })
   }
-  const navigateToModule=({name})=>{
-    const donateDiv = document.getElementById(name);
-    donateDiv.scrollIntoView({behavior: "smooth"})
+  const navigateToModule = ({ name }) => {
+    const donateDiv = document.getElementById(name)
+    donateDiv.scrollIntoView({ behavior: "smooth" })
   }
   return (
     <div style={{ marginBottom: 116 }}>
-      <header
-        style={{
-          border: "1px solid #000",
-          borderWidth: " 0 0 1px 0",
-          position: "fixed",
-          top: 0,
-          width: "100%",
-          backgroundColor: "#FFF",
-        }}
-      >
-        
-        <Container
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-          }}
-        >
-          <img
-            src={Logo}
-            alt="ek-sath"
-            style={{ width: 70, height: 70, margin: "21px 0 21px 0" }}
-          />
-          {/* <div className="menu">
-            {MenuItems?.map((item, index) => (
-              <div
-                key={index}
-                className={`menu-item menu-typography ${
-                  selectedItem === index ? "selected" : ""
-                }`}
-                onClick={() => handleClick(index)}
-              >
-                {item}
-              </div>
-            ))}
-          </div> */}
-          {/* <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <button className="donate-button" onClick={()=>navigateToModule({name:'donate'})}>Donate</button>
-          </div> */}
-        </Container>
-      </header>
+      <Navbar
+        handleClick={handleClick}
+        navigateToModule={navigateToModule}
+        selectedItem={selectedItem}
+      />
       <section id="home" />
-      <BannerSection image={BannerImage} className="flex-row-reverse max-lg:flex-col"/>
+      <BannerSection
+        image={BannerImage}
+        className="flex-row-reverse max-lg:flex-col"
+      />
       <section>
         <Goals />
       </section>
-      
 
-       <section id="projects">
-      <ActivityComponent data={swachActivity} image={ActivityImg} >
-        <ActivitySection />
-      </ActivityComponent>
-      
+      <section id="projects" className="mb-[300px] sm:mb-[50px]">
+        <ActivityComponent data={swachActivity} image={ActivityImg}>
+          <ActivitySection />
+        </ActivityComponent>
 
-     <ActivityComponent
-        data={elephantActivity}
-        image={ElephantImg}
-        className="flex-row-reverse max-lg:flex-col"
-      >
-        <ElephantSection />
-      </ActivityComponent>
+        <ActivityComponent
+          data={elephantActivity}
+          image={ElephantImg}
+          className="flex-row-reverse max-lg:flex-col"
+        >
+          <ElephantSection />
+        </ActivityComponent>
 
-       <ActivityComponent data={carterActivity} image={CarterImg}>
-        <CarterSection />
-      </ActivityComponent>
-
-      </section> 
-    <OurTeam id="team"/>
-      <OurPartner id="partners"/>
-     <Donate id="donate" />
+        <ActivityComponent data={carterActivity} image={CarterImg}>
+          <CarterSection />
+        </ActivityComponent>
+      </section>
+      <OurTeam id="team" />
+      <OurPartner id="partners" />
+      <Donate id="donate" />
     </div>
   )
 }

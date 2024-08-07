@@ -67,9 +67,9 @@ export const ElephantSection = () => {
         management initiatives, further enhancing our efforts to create a
         lasting impact.
       </p>
-      <h3 className="activity-subHeading">Research Expert</h3>
+      <h3 className="activity-subHeading mt-[20px]">Research Expert</h3>
       <UserDetail userImg={userImg} title="Ms. Niroppama Sawant" />
-      <p className="activity-description">
+      <p className="activity-description mt-[40px]">
         With the assistance of research expert Ms. Niroppama Sawant, we have
         extensively studied Elephanta Island, revealing insights into its
         demographics and livelihoods. While official records indicate a
