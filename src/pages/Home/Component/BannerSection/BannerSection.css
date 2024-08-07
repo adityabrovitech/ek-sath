@@ -1,0 +1,18 @@
+.SectionTitle{
+    color: #3C3C3B;
+font-family: "Avenir Next LT Pro";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px; /* 133.333% */
+letter-spacing: -0.96px;
+}
+
+.learn-more{
+    color: #3C3C3B;
+    font-family: "Avenir Next LT Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px; /* 161.111% */
+}

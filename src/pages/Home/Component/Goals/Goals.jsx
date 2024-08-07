@@ -8,7 +8,8 @@ const Goals = () => {
   const items = [
     {
       title: "Vision",
-      description:"Our vision is to create a better everyday life for many people.",
+      description:
+        "Our vision is to create a better everyday life for many people.",
       svg: VisionIcon,
     },
     {
@@ -23,31 +24,27 @@ const Goals = () => {
       svg: AmbitionIcon,
     },
   ]
+
   return (
     <Container>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          marginTop:"96px"
-        }}
-      >
+      <div className="flex flex-row max-lg:flex-col justify-between mt-[96px]">
         {items.map((item, index) => {
           return (
             <div
               key={index}
-              className={`goal-item ${
-                index < items.length - 1 ? "border-right" : ""
-              }`}
+              className={` ${
+                index < items.length - 1
+                  ? "border-r-2 goal-item  border-r-[#F9F484] max-lg:border-b-2 max-lg:border-r-0 max-lg:border-b-[#F9F484]"
+                  : ""
+              } 
+               `}
               style={{
                 display: "flex",
                 flexDirection: "column",
                 flex: 1,
                 justifyContent: "flex-start",
                 alignItems: "flex-start",
-                margin: "64px 0",
-                padding:"0 64px"
+                padding: "64px",
               }}
             >
               <img src={item.svg} alt={item.title} className="goal-svg" />

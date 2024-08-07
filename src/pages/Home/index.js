@@ -15,6 +15,8 @@ import { CarterSection } from "./Component/CarterSection/CarterSection"
 import OurTeam from "./Component/OurTeam"
 import OurPartner from "./Component/OurPartners/Index"
 import Donate from "./Component/Donate"
+import BannerSection from "./Component/BannerSection"
+import BannerImage from "../../assets/images/BannerImage.png"
 const Home = () => {
   const MenuItems = ["Home", "Projects", "Team", "Partners"]
   const swachActivity = {
@@ -93,30 +95,33 @@ const Home = () => {
         </Container>
       </header>
       <section id="home" />
+      <BannerSection image={BannerImage} className="flex-row-reverse max-lg:flex-col"/>
       <section>
         <Goals />
       </section>
+      
 
-      <section id="projects">
+       <section id="projects">
       <ActivityComponent data={swachActivity} image={ActivityImg} >
         <ActivitySection />
       </ActivityComponent>
+      
 
-      <ActivityComponent
+     <ActivityComponent
         data={elephantActivity}
         image={ElephantImg}
-        containerStyle={{ flexDirection: "row-reverse" }}
+        className="flex-row-reverse max-lg:flex-col"
       >
         <ElephantSection />
       </ActivityComponent>
 
-      <ActivityComponent data={carterActivity} image={CarterImg}>
+       <ActivityComponent data={carterActivity} image={CarterImg}>
         <CarterSection />
       </ActivityComponent>
 
       </section> 
-     <OurTeam id="team"/>
-     <OurPartner id="partners"/>
+    <OurTeam id="team"/>
+      <OurPartner id="partners"/>
      <Donate id="donate" />
     </div>
   )
