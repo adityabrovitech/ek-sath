@@ -1,0 +1,19 @@
+.activity-description {
+    display: flex;
+    margin-left: 5px;
+    color: #3C3C3B;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Avenir Next LT Pro";
+    line-height: 26px;
+    letter-spacing: -0.16px;
+}
+
+.activity-subHeading {
+    color: #3C3C3B;
+    font-family: "Avenir Next LT Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

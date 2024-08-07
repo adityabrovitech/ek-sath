@@ -1,0 +1,9 @@
+
+.activity-description {
+    display: flex;
+    margin-left: 5px;
+    color: #3C3C3B;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Avenir Next LT Pro";
+}

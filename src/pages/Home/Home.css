@@ -1,0 +1,47 @@
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 50px 0 50px;
+  border: 10px solid transparent;
+  border-width: 0 0 10px 0;
+}
+
+.menu-item.selected {
+  border: 10px solid #3c3c3b;
+  border-width: 0 0 10px 0;
+}
+
+.donate-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 8px;
+    background: #16139B;    
+}
+
+.donate-button:hover {
+  background-color: darkblue;
+}
+
+.menu-typography {
+  color: #3c3c3b;
+  font-family: "Avenir Next LT Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

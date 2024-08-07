@@ -1,0 +1,39 @@
+.goals-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 162px;
+}
+
+.goal-item {
+    flex: 1;
+}
+
+.border-right {
+    border-right: 2px solid #F9F484;
+}
+
+.goal-svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.goal-title {
+    color: #3C3C3B;
+    font-family: "Avenir Next LT Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 0 8px 0
+}
+
+.goal-description {
+    color: #3C3C3B;
+    font-family: "Avenir Next LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0
+}
