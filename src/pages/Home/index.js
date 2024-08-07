@@ -70,7 +70,7 @@ const Home = () => {
             alt="ek-sath"
             style={{ width: 70, height: 70, margin: "21px 0 21px 0" }}
           />
-          <div className="menu">
+          {/* <div className="menu">
             {MenuItems?.map((item, index) => (
               <div
                 key={index}
@@ -82,8 +82,8 @@ const Home = () => {
                 {item}
               </div>
             ))}
-          </div>
-          <div
+          </div> */}
+          {/* <div
             style={{
               display: "flex",
               alignItems: "center",
@@ -91,7 +91,7 @@ const Home = () => {
             }}
           >
             <button className="donate-button" onClick={()=>navigateToModule({name:'donate'})}>Donate</button>
-          </div>
+          </div> */}
         </Container>
       </header>
       <section id="home" />

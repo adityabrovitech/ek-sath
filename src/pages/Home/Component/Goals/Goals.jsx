@@ -37,15 +37,9 @@ const Goals = () => {
                   ? "border-r-2 goal-item  border-r-[#F9F484] max-lg:border-b-2 max-lg:border-r-0 max-lg:border-b-[#F9F484]"
                   : ""
               } 
+              flex flex-col justify-start p-[64px] max-lg-p[0px] max-lg:px-[32px] 
                `}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                flex: 1,
-                justifyContent: "flex-start",
-                alignItems: "flex-start",
-                padding: "64px",
-              }}
+              
             >
               <img src={item.svg} alt={item.title} className="goal-svg" />
               <h2 className="goal-title">{item.title}</h2>
