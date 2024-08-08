@@ -18,9 +18,9 @@ import Navbar from "./Navbar"
 const Home = () => {
   const MenuItems = ["Home", "Projects", "Team", "Partners"]
   const swachActivity = {
-    location: "Elephanta Island, Mumbai",
-    day: "Sunday",
-    timing: "8.30am to 10.30am",
+    Location: "Elephanta Island, Mumbai",
+    Day: "Sunday",
+    Timing: "8.30am to 10.30am",
   }
   const elephantActivity = {
     Location: "Kokari, Koliwada, Sion, Mumbai",

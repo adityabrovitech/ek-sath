@@ -13,7 +13,7 @@ import Partner10 from "../../../../assets/images/partners/partner10.png"
 import Partner11 from "../../../../assets/images/partners/partner11.png"
 import Partner12 from "../../../../assets/images/partners/partner12.png"
 import Partner13 from "../../../../assets/images/partners/partner13.png"
-import ParnterBanner from "../../../../assets/images/partnerBanner.png"
+import ParnterBanner from "../../../../assets/images/partners/OurPartner.png"
 import { Container } from "../../../../components/Container"
 
 const OurPartner = () => {
@@ -35,26 +35,31 @@ const OurPartner = () => {
 
   return (
     <section id="partners">
-    <Container >
-    <div className="mt-[398px] flex-row flex flex-wrap">
-      <div className="w-[40%] max-lg:w-[100%] pr-[36px]">
-        <img
-          src={ParnterBanner}
-          alt="Our Partners"
-          className="w-[100%] object-contain"
-        />
-      </div>
-      <div className="w-[60%] max-lg:w-[100%] p-[36px]">
-        <h2 className="section-title">Our Partners and Supporters </h2>
-        
-        <div className="grid grid-cols-4" style={{ gap: "40px 40px" }}>
-          {partnerImages.map((partner, index) => (
-            <img key={index} src={partner} alt={`Partner ${index + 1}`} className="object-contain aspect-auto h-20" />
-          ))}
+      <Container>
+        <div className="mt-[398px] flex-row flex flex-wrap">
+          <div className="w-[40%] max-lg:w-[100%] pr-[36px]">
+            <img
+              src={ParnterBanner}
+              alt="Our Partners"
+              className="w-[100%] object-contain"
+            />
+          </div>
+          <div className="w-[60%] max-lg:w-[100%] p-[36px]">
+            <h2 className="section-title">Our Partners and Supporters </h2>
+
+            <div className="grid grid-cols-4" style={{ gap: "40px 40px" }}>
+              {partnerImages.map((partner, index) => (
+                <img
+                  key={index}
+                  src={partner}
+                  alt={`Partner ${index + 1}`}
+                  className="object-contain aspect-auto h-20"
+                />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    </Container>
+      </Container>
     </section>
   )
 }

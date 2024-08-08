@@ -1,9 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import { Container } from "../../../../components/Container"
 import "./BannerSection.css"
 import PojectTitle from "../../../../components/PojectTitle"
 import ProjectHeading from "../../../../components/ProjectHeading"
+import ReactPlayer from "react-player"
+import ReactModal from "react-modal"
 const BannerSection = ({ image, containerStyle, className, onClick }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+
+  const openModal = () => {
+    setModalIsOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalIsOpen(false)
+  }
   return (
     <Container>
       <div
@@ -43,7 +54,10 @@ const BannerSection = ({ image, containerStyle, className, onClick }) => {
             <button className="donate-button" onClick={onClick}>
               Donate
             </button>
-            <div className="ml-[60px] flex flex-row justify-center items-center">
+            <div
+              className="ml-[60px] flex flex-row justify-center items-center"
+              onClick={() => openModal()}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="48"
@@ -61,6 +75,19 @@ const BannerSection = ({ image, containerStyle, className, onClick }) => {
             </div>
           </div>
         </div>
+
+        <ReactModal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Video Player"
+        >
+          <button onClick={closeModal}>Close</button>
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+            playing
+          />
+          
+        </ReactModal>
       </div>
     </Container>
   )
