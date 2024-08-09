@@ -89,18 +89,18 @@ const OurTeam = () => {
       project: "(Carter Cleanup)",
       designation: "Co-founder, Carter CleanUp",
     },
-    {
-      image: ApurvaImg,
-      name: "Apurva Prabhu",
-      project: "Social Media Executive",
-      designation: "Developer",
-    },
-    {
-      image: NishadImg,
-      name: "Nishad Ghadi",
-      project: "Project N",
-      designation: "Office Admin",
-    },
+    // {
+    //   image: ApurvaImg,
+    //   name: "Apurva Prabhu",
+    //   project: "Social Media Executive",
+    //   designation: "Developer",
+    // },
+    // {
+    //   image: NishadImg,
+    //   name: "Nishad Ghadi",
+    //   project: "Project N",
+    //   designation: "Office Admin",
+    // },
   ]
 
   return (

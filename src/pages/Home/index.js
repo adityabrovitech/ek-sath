@@ -18,12 +18,12 @@ import Navbar from "./Navbar"
 const Home = () => {
   const MenuItems = ["Home", "Projects", "Team", "Partners"]
   const swachActivity = {
-    Location: "Elephanta Island, Mumbai",
+    Location: "Kokari, Koliwada, Sion, Mumbai",
     Day: "Sunday",
     Timing: "8.30am to 10.30am",
   }
   const elephantActivity = {
-    Location: "Kokari, Koliwada, Sion, Mumbai",
+    Location: "Elephanta Island,Mumbai",
     "Meeting Point": "Gateway of India, Colaba, Mumbai",
     Timing: "Once a month",
     Duration: "2 hours",
@@ -53,6 +53,7 @@ const Home = () => {
       <section id="home" />
       <BannerSection
         image={BannerImage}
+        onClick={() => navigateToModule({ name: "donate" })}
         className="flex-row-reverse max-lg:flex-col"
       />
       <section>

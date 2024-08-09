@@ -16,7 +16,8 @@
     font-weight: 700;
     line-height: normal;
     margin: 0;
-    margin-top: 45px
+    margin-top: 45px;
+    text-align: center;
 }
 
 .user-name.project {
@@ -30,5 +31,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    margin: 6px 0
+    margin: 6px 0;
+    text-align: center;
 }
