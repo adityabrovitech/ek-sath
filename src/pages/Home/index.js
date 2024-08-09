@@ -41,7 +41,7 @@ const Home = () => {
   }
   const navigateToModule = ({ name }) => {
     const donateDiv = document.getElementById(name)
-    donateDiv.scrollIntoView({ behavior: "smooth" })
+          .scrollIntoView({ behavior: "smooth" })
   }
   return (
     <div style={{ marginBottom: 116 }}>

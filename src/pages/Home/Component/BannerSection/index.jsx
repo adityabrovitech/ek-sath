@@ -76,18 +76,52 @@ const BannerSection = ({ image, containerStyle, className, onClick }) => {
           </div>
         </div>
 
-        <ReactModal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Video Player"
-        >
-          <button onClick={closeModal}>Close</button>
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
-            playing
-          />
-          
-        </ReactModal>
+        (
+          <ReactModal
+      isOpen={modalIsOpen}
+      onRequestClose={closeModal}
+      contentLabel="Video Player"
+      style={{
+        content: {
+          position: 'absolute',
+          top: '10%',
+          left: '10%',
+          right: '10%',
+          bottom: '10%',
+          background: 'black',
+          border: 'none',
+          padding: '0',
+        },
+        overlay: {
+          backgroundColor: 'rgba(0, 0, 0, 0.75)',
+        },
+      }}
+    >
+      <button 
+        onClick={closeModal} 
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '10px',
+          zIndex: 1000,
+          background: 'white',
+          border: 'none',
+          padding: '10px',
+          cursor: 'pointer',
+        }}
+      >
+        Close
+      </button>
+      <div style={{ width: '100%', height: '100%' }}>
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=FwXfW6K5eaE"
+          playing
+          width="100%"
+          height="100%"
+        />
+      </div>
+    </ReactModal>
+  );
       </div>
     </Container>
   )
