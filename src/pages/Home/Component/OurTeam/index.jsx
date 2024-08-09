@@ -1,19 +1,19 @@
 import React from "react"
 import { Container } from "../../../../components/Container"
-import PragyaImg from "../../../../assets/images/UserImage/Pragya.png"
-import AshwinImg from "../../../../assets/images/UserImage/Ashwin.png"
+import PragyaImg from "../../../../assets/images/UserImage/Pragya-Kapoor.png"
+import AshwinImg from "../../../../assets/images/UserImage/Ashwin-Malwade.png"
 import AshokImg from "../../../../assets/images/UserImage/Ashok.png"
-import MayankImg from "../../../../assets/images/UserImage/Mayank.png"
-import VidhiImg from "../../../../assets/images/UserImage/Vidhi.png"
-import AncilaImg from "../../../../assets/images/UserImage/Ancila.png"
+import MayankImg from "../../../../assets/images/UserImage/Mayank-Bannashi.png"
+import VidhiImg from "../../../../assets/images/UserImage/Vidhi-Thakkar.png"
+import AncilaImg from "../../../../assets/images/UserImage/Ancila-John.png"
 import Nizamuddin from "../../../../assets/images/UserImage/Nizamuddin.png"
-import TanviImg from "../../../../assets/images/UserImage/Tanvi.png"
-import HemangiImg from "../../../../assets/images/UserImage/Hemangi.png"
-import FreishiaImg from "../../../../assets/images/UserImage/Freishia.png"
-import NupurImg from "../../../../assets/images/UserImage/Nupur.png"
-import MaansiImg from "../../../../assets/images/UserImage/Mansi.png"
-import ApurvaImg from "../../../../assets/images/UserImage/Apurva.png"
-import NishadImg from "../../../../assets/images/UserImage/Nishad.png"
+import TanviImg from "../../../../assets/images/UserImage/Tanvi-Patankar.png"
+import HemangiImg from "../../../../assets/images/UserImage/Female-Profile-Icon.png"
+import FreishiaImg from "../../../../assets/images/UserImage/Freishia-Bomanbehram.png"
+import NupurImg from "../../../../assets/images/UserImage/Nupur-Agarwal.png"
+import MaansiImg from "../../../../assets/images/UserImage/Maansi-Desai.png"
+import ApurvaImg from "../../../../assets/images/UserImage/Apurva-Prabhu.png"
+import NishadImg from "../../../../assets/images/UserImage/Male-Profile-Icon.png"
 import "./OurTeam.css"
 const OurTeam = () => {
   const teamMembers = [
@@ -120,7 +120,7 @@ const OurTeam = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-48 h-48 object-contain"
+                className="w-48 h-48 object-contain rounded-full"
               />
               <h3 className="user-name">{member.name}</h3>
               {member.project ? (
