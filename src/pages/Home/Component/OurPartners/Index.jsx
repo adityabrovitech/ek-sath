@@ -1,6 +1,6 @@
 import React from "react"
 import "./OurPartner.css"
-import Partner1 from "../../../../assets/images/partners/partner.png"
+import Partner1 from "../../../../assets/images/partners/partner.jpg"
 import Partner2 from "../../../../assets/images/partners/partner2.png"
 import Partner3 from "../../../../assets/images/partners/partner3.png"
 import Partner4 from "../../../../assets/images/partners/partner4.png"
