@@ -24,16 +24,10 @@ const OurTeam = () => {
       designation: "Founder & CEO",
     },
     {
-      image: AshwinImg,
-      name: "Ashwin Malwade",
-      project: "",
-      designation: "Managing Director",
-    },
-    {
       image: AshokImg,
       name: "Ashok",
       project: "",
-      designation: "Chief Operations Officer",
+      designation: "Managing Director",
     },
     {
       image: MayankImg,

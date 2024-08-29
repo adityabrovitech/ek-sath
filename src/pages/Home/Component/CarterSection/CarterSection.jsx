@@ -10,7 +10,6 @@ import NupurImg from "../../../../assets/images/UserImage/Nupur.png"
 export const CarterSection = () => {
   const userList = [
     { name: "Harold Fernandes", img: HaroldImg },
-    { name: "Ashwin Malwade", img: AswinImg },
     { name: "Nupur Agarwal", img: NupurImg },
     { name: "Freishia B", img: FreishiaImg },
     { name: "Maansi Ahuja.", img: MansiImg },
